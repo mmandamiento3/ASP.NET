@@ -1,0 +1,128 @@
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\ApplicationInsights.config
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\csc.exe
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\System.Collections.Immutable.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\System.Reflection.Metadata.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\vbc.exe
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\VBCSCompiler.exe
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\roslyn\VBCSCompiler.exe.config
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Validaciones.dll.config
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Validaciones.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Validaciones.pdb
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Antlr3.Runtime.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\EntityFramework.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\EntityFramework.SqlServer.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.DependencyCollector.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.Web.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.WindowsServer.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.ApplicationInsights.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.Web.Infrastructure.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Newtonsoft.Json.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Helpers.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Mvc.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Optimization.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Razor.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.WebPages.Deployment.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.WebPages.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.WebPages.Razor.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\WebGrease.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\EntityFramework.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\EntityFramework.SqlServer.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.DependencyCollector.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.Web.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.AI.WindowsServer.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.ApplicationInsights.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Helpers.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Mvc.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Optimization.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.Razor.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.WebPages.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.WebPages.Deployment.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\System.Web.WebPages.Razor.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Antlr3.Runtime.pdb
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\Newtonsoft.Json.xml
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.Helpers.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.Mvc.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.Optimization.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.Razor.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.WebPages.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\bin\es\System.Web.WebPages.Razor.resources.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\obj\Debug\Validaciones.csprojResolveAssemblyReference.cache
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\obj\Debug\Validaciones.dll
+E:\Curso ASP.NET MVC5\Validaciones\Validaciones\obj\Debug\Validaciones.pdb
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\ApplicationInsights.config
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\csc.exe
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\vbc.exe
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\VBCSCompiler.exe
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Validaciones.dll.config
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Validaciones.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Validaciones.pdb
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Antlr3.Runtime.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\EntityFramework.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\EntityFramework.SqlServer.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.Web.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Newtonsoft.Json.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Helpers.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Mvc.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Optimization.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Razor.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.WebPages.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.WebPages.Razor.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\WebGrease.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\EntityFramework.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\EntityFramework.SqlServer.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.Web.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Helpers.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Mvc.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Optimization.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.Razor.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.WebPages.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\System.Web.WebPages.Razor.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Antlr3.Runtime.pdb
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\Newtonsoft.Json.xml
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.Razor.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\obj\Debug\Validaciones.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\obj\Debug\Validaciones.dll
+C:\Users\Christian\Desktop\ASP.NET-f45f1729742ecda862ba10f958cabc30563c77d8\Validaciones\Validaciones\obj\Debug\Validaciones.pdb
