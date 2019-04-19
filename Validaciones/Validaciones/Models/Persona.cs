@@ -42,5 +42,9 @@ namespace Validaciones.Models
 
             return errores;
         }
+
+        [DataType(DataType.Password)]
+        public string Resumen { get; set; }
+
     }
 }

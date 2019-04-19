@@ -35,6 +35,9 @@
         <th>
             @Html.DisplayNameFor(model => model.MonsoSolicitudPrestamos)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resumen)
+        </th>
         <th></th>
     </tr>
 
@@ -63,6 +66,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.MonsoSolicitudPrestamos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resumen)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
