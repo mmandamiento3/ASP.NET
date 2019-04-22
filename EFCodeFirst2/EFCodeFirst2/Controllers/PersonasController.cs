@@ -97,13 +97,32 @@ namespace EFCodeFirst2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,Nombre,Nacimiento,Edad")] Persona persona)
         {
-            if (ModelState.IsValid)
-            {
+            //Metodo 1 : Trae El objeto y lo actualiza
+            var PersonaEditar = db.Persona.FirstOrDefault(x =>x.Id==11);
+            PersonaEditar.Nombre = "Christian Jhonnatan Morales";
+            PersonaEditar.Edad = PersonaEditar.Edad + 1;
+            db.SaveChanges();
+           
+
+
+            //metodo 2 : Actualizacion parcial
+            var PersonaEditar2 = new Persona();
+            PersonaEditar2.Id = 12;
+            PersonaEditar2.Nombre = "Guillermo Gonzalo Morales Mandamiento";
+            PersonaEditar2.Edad = 120;
+            db.Persona.Attach(PersonaEditar2);
+            db.Entry(PersonaEditar2).Property(y => y.Nombre).IsModified = true;
+            db.SaveChanges();
+
+
+
+            //metodo 3 : Objeto externo actualizado (parametro persona)
+
+           
                 db.Entry(persona).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
-            }
-            return View(persona);
+            
         }
 
         // GET: Personas/Delete/5
