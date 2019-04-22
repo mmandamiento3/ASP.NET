@@ -10,6 +10,9 @@ namespace EFCodeFirst2.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            //Si queremos que no salga la advertencia de quie s eperdera data ponemos el siguiente codigo:
+            //NO ES RECOMMENDBALE
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(EFCodeFirst2.Models.ApplicationDbContext context)
