@@ -16,9 +16,25 @@ namespace EFCodeFirst2.Controllers
 
         // GET: Personas
         public ActionResult Index()
+            
         {
-            return View(db.Persona.ToList());
-        }
+           
+            //Seleccionar todos las columnas
+            var listadoPersonasTodasLasColumnas=db.Persona.ToList();
+
+            //Seleccionar una columna
+            var listadonombres = db.Persona.Select(x => x.Nombre).ToList();
+
+            //Selecciona varias columnas y proyectandolas a un tipo anonimo
+            var listadoPERsonasVariasColumnas = db.Persona.Select(x => new {Nombre = x.Nombre, Edad = x.Edad}).ToList();
+
+            //Selecciona varias columnas y proyectandolas hacia persona
+            var listadoPersonasVariasColumnas = db.Persona.Select(x =>new {Nombre=x.Nombre,Edad=x.Edad }).ToList().Select(x=>new Persona() { Nombre= x.Nombre, Edad=x.Edad}).ToList();
+
+
+            return View(listadoPersonasTodasLasColumnas);
+
+                }
 
         // GET: Personas/Details/5
         public ActionResult Details(int? id)
@@ -60,10 +76,7 @@ namespace EFCodeFirst2.Controllers
                 persona1.Nombre = "sujeto3";
                 persona1.Edad = 10;
                 persona1.Nacimiento = new DateTime(2012,01,02);
-                lista.Add(persona1);
-            
-
-               
+                lista.Add(persona1);             
                 
 
                 db.Persona.AddRange(lista);
@@ -145,7 +158,8 @@ namespace EFCodeFirst2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Persona persona = db.Persona.Find(id);
+            Persona persona = new Persona();
+            persona = db.Persona.Find(id);
             db.Persona.Remove(persona);
             db.SaveChanges();
             return RedirectToAction("Index");
