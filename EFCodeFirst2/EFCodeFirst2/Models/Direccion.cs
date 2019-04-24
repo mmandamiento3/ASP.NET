@@ -9,5 +9,7 @@ namespace EFCodeFirst2.Models
     {
         public int CodigoDireccion { get; set; }
         public string Calle { get; set; }
+        //Asumiento que una o varias direcciones corresponden a una persona
+        public Persona Persona { get; set; }
     }
 }

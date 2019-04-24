@@ -12,5 +12,7 @@ namespace EFCodeFirst2.Models
         public string Nombre { get; set; }
         public DateTime Nacimiento { get; set; }
         public int Edad { get; set; }
+        //Asumiento que una persona puede tener 1 o mas direcciones
+        public List<Direccion>Direcciones { get; set; }
     }
 }

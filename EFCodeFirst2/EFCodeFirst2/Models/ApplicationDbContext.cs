@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -31,6 +32,15 @@ namespace EFCodeFirst2.Models
             //como primary KEY :) -- Ejemplo en la clase-modelo : Direccion
             modelBuilder.Properties<int>().Where(p => p.Name.StartsWith("Codigo"))
                 .Configure(p => p.IsKey());
+
+
+
+
+            //Relaciona la tabla Direccion con la tabla persona
+            /*Se crea una columna personaid en la tabla direccion en la cual hace refernaica
+             (llave foranea) hacia la tabla persona*/
+             //--EN pocas palabras la entidad Direccion siempre requirira el id de la persona
+            modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona);
 
             base.OnModelCreating(modelBuilder);
         }

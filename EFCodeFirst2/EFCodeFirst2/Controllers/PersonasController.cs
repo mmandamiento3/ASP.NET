@@ -16,23 +16,43 @@ namespace EFCodeFirst2.Controllers
 
         // GET: Personas
         public ActionResult Index()
-            
-        {
-           
-            //Seleccionar todos las columnas
-            var listadoPersonasTodasLasColumnas=db.Persona.ToList();
 
-            //Seleccionar una columna
+        {
+            /*VARIAS FORMAS DE MOSTRAR DATOS:
+            // Seleccionar todos las columnas
+            var listadoPersonasTodasLasColumnas = db.Persona.ToList();
+
+            // Seleccionar una columna
             var listadonombres = db.Persona.Select(x => x.Nombre).ToList();
 
-            //Selecciona varias columnas y proyectandolas a un tipo anonimo
-            var listadoPERsonasVariasColumnas = db.Persona.Select(x => new {Nombre = x.Nombre, Edad = x.Edad}).ToList();
+           // Selecciona varias columnas y proyectandolas a un tipo anonimo
+            var listadoPERsonasVariasColumnas = db.Persona.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList();
 
             //Selecciona varias columnas y proyectandolas hacia persona
-            var listadoPersonasVariasColumnas = db.Persona.Select(x =>new {Nombre=x.Nombre,Edad=x.Edad }).ToList().Select(x=>new Persona() { Nombre= x.Nombre, Edad=x.Edad}).ToList();
+            var listadoPersonasVariasColumnas = db.Persona.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList().Select(x => new Persona() { Nombre = x.Nombre, Edad = x.Edad }).ToList();
+            */
+
+            //--------------------------------------------------------------//
 
 
-            return View(listadoPersonasTodasLasColumnas);
+            /*Agregar un neuvo registro con los MODELOS, haciendo referencia a la llave foranea
+            var persona = new Persona() { Id = 13 };
+            db.Persona.Attach(persona);//el attach es como si le dijeramos al EF que preste atencion a el campo con ID=12, que no intente crearlo, sino que lo traiga
+            db.Direccion.Add(new Direccion() { Calle = "Direccion 2", Persona = persona });
+            db.SaveChanges();*/
+
+
+
+            //Traer un registro mediante "propiedades de navegacion", se puede hacer mediante VIRTUAL e INCLUDE
+            //var persona = db.Persona.Include("Direcciones").FirstOrDefault(x => x.Id==13);
+            //var direcciones = persona.Direcciones;
+
+            //PRopiedades de navegacion desde la direccion hacia la persona
+            var direccion = db.Direccion.Include("Persona").FirstOrDefault(x =>x.CodigoDireccion==5);
+            var nombre = direccion.Persona.Nombre;
+
+
+            return View(db.Persona.ToList());
 
                 }
 
