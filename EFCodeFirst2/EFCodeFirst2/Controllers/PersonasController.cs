@@ -43,13 +43,18 @@ namespace EFCodeFirst2.Controllers
 
 
 
+
+
             //Traer un registro mediante "propiedades de navegacion", se puede hacer mediante VIRTUAL e INCLUDE
             //var persona = db.Persona.Include("Direcciones").FirstOrDefault(x => x.Id==13);
             //var direcciones = persona.Direcciones;
 
+            var persona = db.Persona.Include("Direcciones").FirstOrDefault(x=>x.Id==12);
+            var direcciones = persona.Direcciones;
+
             //PRopiedades de navegacion desde la direccion hacia la persona
-            var direccion = db.Direccion.Include("Persona").FirstOrDefault(x =>x.CodigoDireccion==5);
-            var nombre = direccion.Persona.Nombre;
+            //var direccion = db.Direccion.Include("Persona").FirstOrDefault(x => x.CodigoDireccion == 5);
+            //var nombre = direccion.Persona.Nombre;
 
 
             return View(db.Persona.ToList());
