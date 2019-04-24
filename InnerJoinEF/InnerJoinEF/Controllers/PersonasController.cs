@@ -39,6 +39,13 @@ namespace InnerJoinEF.Controllers
             var personasConSusDirecciones = db.Persona.GroupJoin(db.Direccion, per => per.Id,
                dir => dir.IdPersona, (per, dir) => new { per, dir }).ToList();
 
+
+            //PARA VER EL QUERY QUE ENTITY FRAMEWORK REALIZA al final de cada sentencia se pone el tostring:
+            //var personas = db.Persona.ToString();
+            //var direccion = db.Direccion.Select(x => new { x.CodigoDireecion, x.Calle }).ToString();
+            //var personasSexoMasculino = db.Persona.GroupBy(x=>x.Sexo).ToString();
+
+
             return View(db.Persona.ToList());
 
         }
