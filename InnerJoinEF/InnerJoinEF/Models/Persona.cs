@@ -11,5 +11,6 @@ namespace InnerJoinEF.Models
         public string Nombre { get; set; }
         public DateTime NAcimiento { get; set; }
         public int Edad { get; set; }
+        public Sexo  Sexo{ get; set; }
     }
 }
