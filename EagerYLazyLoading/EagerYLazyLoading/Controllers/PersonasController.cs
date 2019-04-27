@@ -34,8 +34,8 @@ namespace EagerYLazyLoading.Controllers
             var persona = db.Persona.FirstOrDefault();
 
             //include con Lambda
-            var personasInclude = db.Persona.Include(x => x.Direcciones).FirstOrDefault();
-            var primerDireccionInclude = db.Persona.FirstOrDefault().Direcciones[0];
+            var perSona1ConDirecciones =db.Persona.Include(x=>x.Direcciones).FirstOrDefault();
+            var persona1ConsusDirecciones = perSona1ConDirecciones.Direcciones[0];
 
             //Include con String
             var personaConDirecciones = db.Persona.Include("Direcciones").ToList();
