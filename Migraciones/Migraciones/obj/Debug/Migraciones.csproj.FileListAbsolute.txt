@@ -65,3 +65,6 @@ E:\Curso ASP.NET MVC5\Migraciones\Migraciones\obj\Debug\Migraciones.pdb
 E:\Curso ASP.NET MVC5\Migraciones\Migraciones\obj\Debug\Migraciones.Migrations.MigracionInicial.resources
 E:\Curso ASP.NET MVC5\Migraciones\Migraciones\obj\Debug\Migraciones.csproj.GenerateResource.Cache
 E:\Curso ASP.NET MVC5\Migraciones\Migraciones\obj\Debug\Migraciones.Migrations.Segunda_Migracion.resources
+E:\Curso ASP.NET MVC5\Migraciones\Migraciones\obj\Debug\Migraciones.Migrations.Creando_SP.resources
+E:\Curso ASP.NET MVC5\Migraciones\Migraciones\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Curso ASP.NET MVC5\Migraciones\Migraciones\bin\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

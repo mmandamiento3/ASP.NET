@@ -1,0 +1,58 @@
+﻿@model DataBaseFirst.Models.tbl_FacturaDetalle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_FacturaDetalle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_FacturaCabecera.IdCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_FacturaCabecera.IdCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Producto.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Producto.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioUnitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioUnitario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdFacturaDetalle }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
