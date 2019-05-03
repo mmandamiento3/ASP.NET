@@ -2,6 +2,15 @@
 @{ 
     ViewBag.Titulo= "INDEX MTFCKR";
 }
+<h4>Filtrar</h4>
+
+@using (Html.BeginForm(null, null, FormMethod.Get))
+{
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" id="edad" />
+    <input type="submit" value="Filtrar" class="btn btn-success" />
+}
+
 
 <p>
     @Html.ActionLink("Create New", "Create")

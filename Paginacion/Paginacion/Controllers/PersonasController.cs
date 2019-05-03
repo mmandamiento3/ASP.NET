@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Paginacion.Models;
+using System.Web.Routing;
 
 namespace Paginacion.Controllers
 {
@@ -15,23 +16,40 @@ namespace Paginacion.Controllers
         private ApplicaciontDbContext db = new ApplicaciontDbContext();
 
         // GET: Personas
-        public ActionResult Index(int pagina=1)//EL parametro pagina=1, es para que por defecto inicie en la pagina 1
+        public ActionResult Index(int? edad,int pagina=1)//EL parametro pagina=1, es para que por defecto inicie en la pagina 1
         {
             var cantidadRegistroPorPagina = 10; //Deberia ser un parámtro
             using (var db=new ApplicaciontDbContext())
             {
-                var personas = db.Persona.OrderBy(x=>x.Id).
-                    Skip((pagina - 1)*cantidadRegistroPorPagina)//Salta los registros, dependiendo de la pagina
-                    .Take(cantidadRegistroPorPagina).ToList();
+                //var personas = db.Persona.OrderBy(x=>x.Id).
+                //    Skip((pagina - 1)*cantidadRegistroPorPagina)//Salta los registros, dependiendo de la pagina
+                //    .Take(cantidadRegistroPorPagina).ToList();
 
-                var totalDeRegistro = db.Persona.Count();//Si se hace un filtro en el listado de arriba, 
-                                                           //  el mismo filtro se deberia poner abajo y no usar el COUNT, ya que si hubieras 10000 registros te contarias todos
+                //var totalDeRegistro = db.Persona.Count();//Si se hace un filtro en el listado de arriba, 
+                //                                           //  el mismo filtro se deberia poner abajo y no usar el COUNT, ya que si hubieras 10000 registros te contarias todos
+
+                //var modelo = new IndexViewModel();
+                //modelo.Personas = personas;
+                //modelo.PaginaActuak = pagina;
+                //modelo.TotalDeRegistros = totalDeRegistro;
+                //modelo.RegsitrosPorPagina = cantidadRegistroPorPagina;
+
+                //return View(modelo);
+
+                Func<Persona, bool> predicado = x => !edad.HasValue || edad.Value == x.Edad;
+
+                var personas = db.Persona.Where(predicado).OrderBy(x => x.Id)
+                    .Skip((pagina - 1) * cantidadRegistroPorPagina)
+                    .Take(cantidadRegistroPorPagina).ToList();
+                var totalDeRegistros = db.Persona.Where(predicado).Count();
 
                 var modelo = new IndexViewModel();
                 modelo.Personas = personas;
                 modelo.PaginaActuak = pagina;
-                modelo.TotalDeRegistros = totalDeRegistro;
+                modelo.TotalDeRegistros = totalDeRegistros;
                 modelo.RegsitrosPorPagina = cantidadRegistroPorPagina;
+                modelo.ValoresQueryString = new RouteValueDictionary();
+                modelo.ValoresQueryString["edad"] = edad;
 
                 return View(modelo);
 

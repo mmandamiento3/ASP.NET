@@ -8,20 +8,25 @@
 <!--Funcionalidad de ANTERIOR y SIGUIENTE-->
 <ul class="pagination">
     @if (Model.PaginaActuak == 1)
-    {                                                   //null es porque no nos redirige a nonguna vista, se queda aca mismo
-        <li class="disabled">@Html.ActionLink("Anterior", null, new { pagina = 1 })</li>
+    {
+        Model.ValoresQueryString["pagina"] = 1;
+        //null es porque no nos redirige a nonguna vista, se queda aca mismo
+        <li class="disabled">@Html.ActionLink("Anterior", null, Model.ValoresQueryString)</li>
     }
     else
     {
-        <li>@Html.ActionLink("Anterior", null, new { pagina = Model.PaginaActuak - 1 })</li>
+        Model.ValoresQueryString["pagina"] = Model.PaginaActuak - 1;
+        <li>@Html.ActionLink("Anterior", null, Model.ValoresQueryString)</li>
     }
 
     @if (Model.PaginaActuak == cantidadPaginas)
     {
+        Model.ValoresQueryString["pagina"] = cantidadPaginas;
         <li class="disabled">@Html.ActionLink("Siguiente", null, new { pagina = cantidadPaginas })</li>
     }
     else
     {
+        Model.ValoresQueryString["pagina"] = Model.PaginaActuak - +1;
         <li>@Html.ActionLink("Siguiente", null, new { pagina = Model.PaginaActuak })</li>
     }
 
@@ -47,6 +52,7 @@
 }
 
 <ul class="pagination">
+    @{Model.ValoresQueryString["pagia"] = 1; }
     <li>@Html.ActionLink("Primera", null, new { pagina = 1 })</li>
     @for (int i = Inicial; i <= Final; i++)
     {
@@ -59,6 +65,7 @@
             <li>@Html.ActionLink(i.ToString(), null, new { pagina = i })</li>
         }
     }
+    @{Model.ValoresQueryString["pagia"] = 1; }
     <li>@Html.ActionLink("Ultima", null, new { pagina = cantidadPaginas })</li>
 </ul>
 
