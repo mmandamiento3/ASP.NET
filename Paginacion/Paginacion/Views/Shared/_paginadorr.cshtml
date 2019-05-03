@@ -1,0 +1,63 @@
+﻿@model Paginacion.Models.BaseModelo
+
+@{
+    var cantidadPaginas = (int)Math.Ceiling((double)Model.TotalDeRegistros / Model.RegsitrosPorPagina);
+}
+
+<!--Funcionalidad de ANTERIOR y SIGUIENTE-->
+<ul class="pagination">
+    @if (Model.PaginaActuak == 1)
+    {                                                   //null es porque no nos redirige a nonguna vista, se queda aca mismo
+        <li class="disabled">@Html.ActionLink("Anterior", null, new { pagina = 1 })</li>
+    }
+    else
+    {
+        <li>@Html.ActionLink("Anterior", null, new { pagina = Model.PaginaActuak - 1 })</li>
+    }
+
+    @if (Model.PaginaActuak == cantidadPaginas)
+    {
+        <li class="disabled">@Html.ActionLink("Siguiente", null, new { pagina = cantidadPaginas })</li>
+    }
+    else
+    {
+        <li>@Html.ActionLink("Siguiente", null, new { pagina = Model.PaginaActuak })</li>
+    }
+
+</ul>
+
+
+<!--Funcionalidad de Páginas-->
+@{
+    int Inicial = 1;
+    var radio = 2;//es la distancia entre el numero de paginas
+    var cantidadMaximaDePaginas = radio * 2 + 1;
+    int Final = (cantidadPaginas > cantidadMaximaDePaginas) ? cantidadMaximaDePaginas : cantidadPaginas;
+    if (Model.PaginaActuak > radio + 1)
+    {
+        Inicial = Model.PaginaActuak - radio;
+        if (cantidadPaginas > Model.PaginaActuak + radio)
+        {
+            Final = Model.PaginaActuak + radio;
+        }
+    }
+
+
+}
+
+<ul class="pagination">
+    <li>@Html.ActionLink("Primera", null, new { pagina = 1 })</li>
+    @for (int i = Inicial; i <= Final; i++)
+    {
+        if (i == Model.PaginaActuak)
+        {
+            <li class="active">@Html.ActionLink(i.ToString(), null, new { pagina = i })</li>
+        }
+        else
+        {
+            <li>@Html.ActionLink(i.ToString(), null, new { pagina = i })</li>
+        }
+    }
+    <li>@Html.ActionLink("Ultima", null, new { pagina = cantidadPaginas })</li>
+</ul>
+

@@ -1,0 +1,63 @@
+﻿@model Paginacion.Models.IndexViewModel
+@{ 
+    ViewBag.Titulo= "INDEX MTFCKR";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var persona in Model.Personas)
+        {
+            <tr>
+                <td>@persona.Id</td>
+                <td>@persona.Nombre</td>
+                <td>@persona.Edad</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = persona.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = persona.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = persona.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{Html.RenderPartial("_paginador", Model);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
