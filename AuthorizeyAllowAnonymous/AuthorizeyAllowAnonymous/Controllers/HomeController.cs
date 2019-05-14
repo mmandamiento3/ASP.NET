@@ -46,44 +46,60 @@ namespace AuthorizeyAllowAnonymous.Controllers
 
 
             /*MANEJANDO ROLES*/
-            if (User.Identity.IsAuthenticated)
+            //if (User.Identity.IsAuthenticated)
+            //{
+            //    using (ApplicationDbContext db = new ApplicationDbContext())
+            //    {
+            //        var idusuarioActual = User.Identity.GetUserId();
+
+            //        var roleManager = new RoleManager<IdentityRole>
+            //            (new RoleStore<IdentityRole>(db));
+
+            //        //Crear Rol
+            //        var resultado = roleManager.Create(new IdentityRole("ApruebaPrestamos"));                 
+            //        var userManager = new UserManager<ApplicationUser>
+            //            (new UserStore<ApplicationUser>(db));
+
+            //        //Agregar usuario a rol
+            //        resultado = userManager.AddToRole(idusuarioActual,"ApruebaPrestamos");
+
+            //        //Verificamos si el Usuario esta en algun rol?
+            //        var usuarioEstaEnRol = userManager.IsInRole(idusuarioActual,"ApruebaPrestamos");
+            //        var usuarioEstaEnRol2 = userManager.IsInRole(idusuarioActual,"OTRO Rol");
+
+            //        //roles del Usuario
+            //        var roles = userManager.GetRoles(idusuarioActual);
+
+            //        //Remover a usuario de Rol
+            //        resultado = userManager.RemoveFromRole(idusuarioActual,"ApruebaPrestamos");
+
+            //        //Borrar ROl
+            //        var RolVendedor = roleManager.FindByName("ApruebaPrestamos");
+            //        roleManager.Delete(RolVendedor);
+
+
+
+            //    }
+            //}
+
+            /*Obteniendo el lugar de nacimiento de un usuario autenticado */
+
+            var UsuA = User.Identity.IsAuthenticated;
+            if (UsuA)
             {
                 using (ApplicationDbContext db = new ApplicationDbContext())
                 {
-                    var idusuarioActual = User.Identity.GetUserId();
-
-                    var roleManager = new RoleManager<IdentityRole>
-                        (new RoleStore<IdentityRole>(db));
-
-                    //Crear Rol
-                    var resultado = roleManager.Create(new IdentityRole("ApruebaPrestamos"));                 
+                    var UsuActual = User.Identity.GetUserId();
                     var userManager = new UserManager<ApplicationUser>
                         (new UserStore<ApplicationUser>(db));
 
-                    //Agregar usuario a rol
-                    resultado = userManager.AddToRole(idusuarioActual,"ApruebaPrestamos");
-
-                    //Verificamos si el Usuario esta en algun rol?
-                    var usuarioEstaEnRol = userManager.IsInRole(idusuarioActual,"ApruebaPrestamos");
-                    var usuarioEstaEnRol2 = userManager.IsInRole(idusuarioActual,"OTRO Rol");
-
-                    //roles del Usuario
-                    var roles = userManager.GetRoles(idusuarioActual);
-
-                    //Remover a usuario de Rol
-                    resultado = userManager.RemoveFromRole(idusuarioActual,"ApruebaPrestamos");
-
-                    //Borrar ROl
-                    var RolVendedor = roleManager.FindByName("ApruebaPrestamos");
-                    roleManager.Delete(RolVendedor);
-
-
-                    
+                    var usuario = userManager.FindById(UsuActual);
+                    var lugarNac = usuario.LugarDeNacimiento;
                 }
             }
+           
 
-
-            return View();
+                return View();
         }
         [Authorize]
         public ActionResult About()

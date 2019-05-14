@@ -88,3 +88,4 @@ E:\Curso ASP.NET MVC5\AuthorizeyAllowAnonymous\AuthorizeyAllowAnonymous\obj\Debu
 E:\Curso ASP.NET MVC5\AuthorizeyAllowAnonymous\AuthorizeyAllowAnonymous\obj\Debug\AuthorizeyAllowAnonymous.pdb
 E:\Curso ASP.NET MVC5\AuthorizeyAllowAnonymous\AuthorizeyAllowAnonymous\obj\Debug\AuthorizeyAllowAnonymous.Migrations.Inicio.resources
 E:\Curso ASP.NET MVC5\AuthorizeyAllowAnonymous\AuthorizeyAllowAnonymous\obj\Debug\AuthorizeyAllowAnonymous.csproj.GenerateResource.Cache
+E:\Curso ASP.NET MVC5\AuthorizeyAllowAnonymous\AuthorizeyAllowAnonymous\obj\Debug\AuthorizeyAllowAnonymous.Migrations.Agrego_Columna_NacimientoS.resources

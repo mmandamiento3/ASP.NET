@@ -79,6 +79,9 @@ namespace AuthorizeyAllowAnonymous.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+
+        [StringLength(120)]
+        public string LugarDeNacimiento { get; set; }
     }
 
     public class ResetPasswordViewModel
